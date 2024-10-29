@@ -25,56 +25,118 @@
       src="https://kit.fontawesome.com/ddc3ee268a.js"
       crossorigin="anonymous"
     ></script>
-
 </head>
 <body>
-    <div>
-        <ul>
-            <li>
-                <a href="/" title="Homepage"> Home</a>
-            </li>
-            <li>
-                <a href="/work.html" title="Sandeep's work"> Work</a>
-            </li>
-            <li>
-                <a href="/contact.html" title="Contact Sandeep"> Contact</a>
-            </li>
-        </ul>
+    <div class="container">
+        <nav class="d-flex justify-content-between">
+            <a href="/" title="Homepage">
+            </a>
+            <ul>
+                <li class="active">
+                    <a href="/" title="Homepage"> Home</a>
+                </li>
+                <li>
+                    <a href="/work.html" title="Sandeep's work"> Work</a>
+                </li>
+                <li>
+                    <a href="/contact.html" title="Contact Sandeep"> Contact</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <div>
+    <div class="hero">
         <p>👋 Hello, I'm</p>
         <h1>Sandeep Dhaliwal</h1>
-        <h2>Front-end developer based in New York</h2>
+        <h2 class="mb-5">Front-end developer based in New York</h2>
         <div>
-            <a href="/contact.html"
-                >Contact me
-            </a>
+            <a href="/contact.html" class="btn btn-branding" title="Contact me"
+                >Contact me</a
+                >
         </div>
     </div>
-    <p>Check out some of my featured projects below</p>
+    <p class="text-center m-5">
+        Check out some of my featured projects below
+    </p>
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col d-none d-lg-block">
+
+            </div>
+            <div class="col">
+                <div class="project-description">
+                    <h2 class="mb-5">Insert project name here</h2>
+                    <p class="mb-5 text-muted">
+                        Insert bio of project here. 
+                    </p>
+                    <a href="/work.html" class="btn btn-branding-outline">
+                        Learn more 
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col">
+                <div class="project-description">
+                    <h2 class="mb-5">Insert project name here 2</h2>
+                    <p class="mb-5 text-muted">
+                        Insert bio of project 2 here. 
+                    </p>
+                    <a href="/work.html" class="btn btn-branding-outline">
+                        Learn more 
+                    </a>
+                </div>
+            </div>
+            <div class="col d-none d-lg-block">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-none d-lg-block">
+            </div>
+        </div>
+        <div class="col">
+            <div class="project-description">
+                <h2 class="mb-5">Insert project name 3</h2>
+                <p class="mb-5 text-muted">
+                    Project description here. 
+                </p>
+                <a href="/work.html" class="btn btn-branding-outline">
+                    Learn more 
+                </a>
+            </div>
+        </div>
+    </div>
     <footer>
-        <div>
-            <h3>Work Inquiry</h3>
-            <p>Let's work together</p>
+        <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+            <div>
+                <h3>Work Inquiry</h3>
+                <p class="text-muted">Let's work together</p>
+            </div>
+            <div>
+                <a 
+                    href="/contact.html"
+                    class="btn btn-branding mt-3"
+                    title="Contact Sandeep"
+                >
+                    Contact me 
+                </a>
+            </div>
         </div>
-        <div>
-            <a 
-                href="/contact.html"
-            >
-                Contact
-            </a>
-        </div>
-        <div>
+        <div class="d-flex justify-content-center mb-5">
             <a
                 href="mailto:sandeep.k.dhaliwal1@gmail.com"
+                class="email-link"
+                title="Email Sandeep"
             >
                 sandeep.k.dhaliwal1@gmail.com
             </a>
         </div>
-        <div>
+        <div class="social-links d-flex justify-content-center">
             <a 
                 href="https://github.com/Pbjsd/"
+                target="_blank"
+                title="GitHub Profile"
             >
+                <i class="fab fa-github"></i>
             </a>
             <a 
                 href="https://www.linkedin.com/in/sandeepkdhaliwal/"
@@ -83,7 +145,8 @@
             >
             </a>
         </div>
-        <p>This website was coded by Sandeep Dhaliwal, and is
+        <p class="text-center mt-5">
+            This website was coded by Sandeep Dhaliwal, and is
             <a 
                 href="https://github.com/Pbjsd/Simple-Portfolio"
                 target="_blank"
@@ -92,5 +155,6 @@
             </a>
         </p>
     </footer>
+</div>
 </body>
 </html>
