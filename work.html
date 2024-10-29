@@ -30,41 +30,103 @@
 ></script>
 </head>
 <body>
-    <div>
-        <ul>
-            <li>
-                <a href="/" title="Homepage"> Home</a>
-              </li>
-              <li>
-                <a href="/about.html" title="About Patricia"> About</a>
-              </li>
-              <li class="active">
-                <a href="/work.html" title="Patricia's work"> Work</a>
-              </li>
-              <li>
-                <a href="/contact.html" title="Contact Patricia"> Contact</a>
-              </li>
-        </ul>
+    <div class="container">
+        <nav class="d-flex justify-content-between">
+            <a href="/" title="Homepage">
+            </a>
+            <ul>
+                <li>
+                    <a href="/" title="Homepage"> Home</a>
+                </li>
+                <li>
+                    <a href="/about.html" title="About Patricia"> About</a>
+                </li>
+                <li class="active">
+                    <a href="/work.html" title="Patricia's work"> Work</a>
+                </li>
+                <li>
+                    <a href="/contact.html" title="Contact Patricia"> Contact</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <div>
-        <div>
-            <h1>Take a look at what I've been working on!</h1>
+    <div class="content-container container">
+        <div class="content">
+            <h1 class="mb-5">Take a look at what I've been working on!</h1>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h3 class="text-center m-0">Project Landing Page</h3>
+                    <p class="text-center text-muted">
+                        Built with HTML, CSS, and JavaScript
+                    </p>
+                    <div class="text-center mt-4 mb-5">
+                        <a 
+                            href="https://www.google.com"
+                            class="btn-branding"
+                            target="_blank"
+                            >Launch Project</a
+                            >
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h3 class="text-center m-0">Project 2 name</h3>
+                    <p class="text-center text-muted">
+                        Project 2 bio 
+                    </p>
+                    <div class="text-center mt-4 mb-5">
+                        <a 
+                            href="https://www.google.com"
+                            class="btn-branding"
+                            target="_blank"
+                            >Launch Project</a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h3 class="text-center m-0">Project 3 name</h3>
+                    <p class="text-center text-muted">
+                        Project 3 bio 
+                    </p>
+                    <div class="text-center mt-4 mb-5">
+                        <a 
+                        href="https://www.google.com"
+                        class="btn-branding"
+                        target="_blank"
+                        >Launch Project</a
+                        >
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h3 class="text-center m-0">Project name 4</h3>
+                    <p class="text-center text-muted">
+                        Project 4 bio here
+                    </p>
+                    <div class="text-center mt-4 mb-5">
+                        <a href="https://www.google.com" class="btn-branding-outline" target="_blank" disabled
+                        >Coming soon</a
+                        >
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <footer>
-        <div>
-            <h3>Work Inquiry</h3>
-            <p>Let's work together</p>
-        </div>
-        <div>
+    <footer class="container">
+        <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+            <div>
+                <h3>Work Inquiry</h3>
+                <p class="text-muted">Let's work together</p>
+            </div>
+            <div>
             <a 
                 href="/contact.html"
+                class="btn btn-branding mt-3"
                 title="Contact Sandeep"
             >
                 Contact me 
             </a>
         </div>
-        <div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
             <a 
                 href="mailto:sandeep.k.dhaliwal1@gmail.com"
                 class="email-link"
@@ -73,15 +135,22 @@
                 sandeep.k.dhaliwal1@gmail.com
             </a>
             </div>
-            <div>
+            <div class="social-links d-flex justify-content-center">
             <a 
                 href="https://github.com/Pbjsd"
                 target="_blank"
                 title="GitHub Profile"
             >
+                <i class="fab fa-github"></i>
+            </a>
+            <a 
+                href="https://www.linkedin.com/in/sandeepkdhaliwal/"
+                target="_blank"
+                title="LinkedIn Profile"
+            >
             </a>
         </div>
-        <p>
+        <p class="text-center mt-5">
             This website was coded by Sandeep Dhaliwal, and is 
             <a 
                 href="https://github.com/Pbjsd/Simple-Portfolio"
@@ -91,7 +160,5 @@
             </a>
         </p>
 </footer>
-</body>
-</html>
 </body>
 </html>
